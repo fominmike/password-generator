@@ -1,9 +1,9 @@
 // Assignment code here
 
-
+// defined ID
 var passwordArea = document.getElementById('password')
 
-
+// characters that have all options
 var characters = {
   uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
   lowercase: 'abcdefghijklmnopqrstuvwxyz',
@@ -12,12 +12,11 @@ var characters = {
 }
 
 
-var generateBtn = document.querySelector("#generate");
-var passwordText = document.querySelector("#password");
 
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+var passwordText = document.querySelector("#password");
 
 // Write password to the #password input
 function writePassword() {
@@ -28,7 +27,7 @@ function writePassword() {
   if(charactersLength < 8 || charactersLength > 128) {
     window.alert('Please select valid amount of characters.\n - Min: 8\n- Max: 128')
   }
-
+// add comments for the users choices
   var uppercaseConfirm = window.confirm('Would you like your password to include UPPERCASE letters?')
 
   var lowercaseConfirm = window.confirm('Would you like your password to include lowercase letters?')
